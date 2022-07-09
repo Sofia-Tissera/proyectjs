@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto Coder</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mi lista de tareas</h1>
+    </header>
+    <form>
+        <input type="text" class="tarea-input">
+        <button class="tarea-button" type="Enviar">OK
+            <i class="fas fa-plus-squuare"></i>
+        </button>
+        <div class="select">
+            <select name="tarea" class="tarea-filtro">
+                <option value="all">Todo</option>
+                <option value="completed">Terminado</option>
+                <option value="uncompleted">Incompleto</option>
+            </select>
+        </div>
+    </form>
+    <div class="tarea-container">
+        <ul class="tarea-lista"></ul>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
